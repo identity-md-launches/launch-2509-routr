@@ -1,0 +1,20 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "RoutrToken",
+    "name": "Routr",
+    "symbol": "ROUTR",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {"poolBps":8000,"initialMarketCapWei":"10000000000000000000","remainderTo":"0x6bf192ebef135e0f645e99d59d9bf44e7711606c"},
+  "notes": "RoutrToken is a fixed-supply ERC-20 named Routr (ROUTR) with 18 decimals. Its parameterless constructor mints all 1,000,000,000 tokens once to msg.sender, the factory at launch. It has no owner, further minting, burning, pausing, blacklisting or transfer fees. There are no application contracts. pool.initialPrice records provenance only; the deployer derives the opening price from economics.initialMarketCapWei and totalSupply."
+}
